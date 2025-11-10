@@ -1,0 +1,610 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.31.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: QUAN KIEU, ASAS, LIC=32B1Q-N0ZAK-EVF1R-K3KBF-M73GW-NZR2E
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.31.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.14
+Assembler:       Armasm.exe V6.14
+Linker/Locator:  ArmLink.exe V6.14
+Library Manager: ArmAr.exe V6.14
+Hex Converter:   FromElf.exe V6.14
+CPU DLL:         SARMCM3.DLL V5.31.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      UL2CM3.DLL V1.163.4.0
+Dialog DLL:      TCM.DLL V1.46.0.0
+ 
+<h2>Project:</h2>
+E:\STM32_SPL\spl_091125\spl_091125.uvprojx
+Project File Date:  11/10/2025
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.14', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'Target 1'
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/CMSIS/RTOS2/FreeRTOS/Source/clib_os.c(26): warning: In file included from...
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/include\FreeRTOS.h(64): warning: In file included from...
+./RTE/RTOS\FreeRTOSConfig.h(352): warning: '__ARM_ARCH_7A__' is not defined, evaluates to 0 [-Wundef]
+#if (__ARM_ARCH_7A__ == 1U)
+     ^
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/CMSIS/RTOS2/FreeRTOS/Source/clib_os.c(139): warning: '__ARM_ARCH_7A__' is not defined, evaluates to 0 [-Wundef]
+#if (__ARM_ARCH_7A__ == 1U)
+     ^
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/CMSIS/RTOS2/FreeRTOS/Source/clib_os.c(26): warning: In file included from...
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/include\FreeRTOS.h(3236): warning: padding struct 'struct xSTATIC_QUEUE' with 1 byte to align 'uxDummy8' [-Wpadded]
+        UBaseType_t uxDummy8;
+                    ^
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/include\FreeRTOS.h(3213): warning: padding size of 'struct xSTATIC_QUEUE' with 3 bytes to alignment boundary [-Wpadded]
+typedef struct xSTATIC_QUEUE
+               ^
+4 warnings generated.
+compiling clib_os.c...
+C:/Users/QUAN/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/src/stm32f10x_adc.c(22): warning: In file included from...
+C:/Users/QUAN/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\stm32f10x_adc.h(63): warning: padding struct 'ADC_InitTypeDef' with 2 bytes to align 'ADC_ExternalTrigConv' [-Wpadded]
+  uint32_t ADC_ExternalTrigConv;          /*!< Defines the external trigger used to start the analog
+           ^
+C:/Users/QUAN/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\stm32f10x_adc.h(49): warning: padding size of 'ADC_InitTypeDef' with 3 bytes to alignment boundary [-Wpadded]
+typedef struct
+        ^
+2 warnings generated.
+compiling stm32f10x_adc.c...
+compiling misc.c...
+compiling stm32f10x_bkp.c...
+compiling os_systick.c...
+main.c(1): warning: In file included from...
+./main.h(9): warning: In file included from...
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/include\FreeRTOS.h(64): warning: In file included from...
+./RTE/RTOS\FreeRTOSConfig.h(352): warning: '__ARM_ARCH_7A__' is not defined, evaluates to 0 [-Wundef]
+#if (__ARM_ARCH_7A__ == 1U)
+     ^
+main.c(1): warning: In file included from...
+./main.h(29): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+2 warnings generated.
+compiling main.c...
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/CMSIS/RTOS2/FreeRTOS/Source/cmsis_os2.c(29): warning: In file included from...
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/include\FreeRTOS.h(64): warning: In file included from...
+./RTE/RTOS\FreeRTOSConfig.h(352): warning: '__ARM_ARCH_7A__' is not defined, evaluates to 0 [-Wundef]
+#if (__ARM_ARCH_7A__ == 1U)
+     ^
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/CMSIS/RTOS2/FreeRTOS/Source/cmsis_os2.c(29): warning: In file included from...
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/include\FreeRTOS.h(3139): warning: padding size of 'struct xSTATIC_TCB' with 1 byte to alignment boundary [-Wpadded]
+typedef struct xSTATIC_TCB
+               ^
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/CMSIS/RTOS2/FreeRTOS/Source/cmsis_os2.c(685): warning: default label in switch which covers all enumeration values [-Wcovered-switch-default]
+      default:         state = osThreadError;      break;
+      ^
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/CMSIS/RTOS2/FreeRTOS/Source/cmsis_os2.c(759): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    taskYIELD();
+               ^
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/CMSIS/RTOS2/FreeRTOS/Source/cmsis_os2.c(30): warning: In file included from...
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/include/task.h(166): warning: padding struct 'struct xTASK_STATUS' with 3 bytes to align 'uxCurrentPriority' [-Wpadded]
+    UBaseType_t uxCurrentPriority;                /* The priority at which the task was running (may be inherited) when the structure was populated. */
+                ^
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/CMSIS/RTOS2/FreeRTOS/Source/cmsis_os2.c(29): warning: In file included from...
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/include\FreeRTOS.h(3284): warning: padding size of 'struct xSTATIC_TIMER' with 3 bytes to alignment boundary [-Wpadded]
+typedef struct xSTATIC_TIMER
+               ^
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/CMSIS/RTOS2/FreeRTOS/Source/cmsis_os2.c(1310): warning: implicit conversion changes signedness: 'UBaseType_t' (aka 'unsigned long') to 'BaseType_t' (aka 'long') [-Wsign-conversion]
+          hTimer = xTimerCreateStatic (name, 1, reload, callb, TimerCallback, (StaticTimer_t *)attr->cb_mem);
+                   ~~~~~~~~~~~~~~~~~~           ^~~~~~
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/CMSIS/RTOS2/FreeRTOS/Source/cmsis_os2.c(1316): warning: implicit conversion changes signedness: 'UBaseType_t' (aka 'unsigned long') to 'BaseType_t' (aka 'long') [-Wsign-conversion]
+            hTimer = xTimerCreate (name, 1, reload, callb, TimerCallback);
+                     ~~~~~~~~~~~~           ^~~~~~
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/CMSIS/RTOS2/FreeRTOS/Source/cmsis_os2.c(29): warning: In file included from...
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/include\FreeRTOS.h(3256): warning: padding size of 'struct xSTATIC_EVENT_GROUP' with 3 bytes to alignment boundary [-Wpadded]
+typedef struct xSTATIC_EVENT_GROUP
+               ^
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/include\FreeRTOS.h(3236): warning: padding struct 'struct xSTATIC_QUEUE' with 1 byte to align 'uxDummy8' [-Wpadded]
+        UBaseType_t uxDummy8;
+                    ^
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/include\FreeRTOS.h(3213): warning: padding size of 'struct xSTATIC_QUEUE' with 3 bytes to alignment boundary [-Wpadded]
+typedef struct xSTATIC_QUEUE
+               ^
+11 warnings generated.
+compiling cmsis_os2.c...
+C:/Users/QUAN/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/src/stm32f10x_exti.c(22): warning: In file included from...
+C:/Users/QUAN/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\stm32f10x_exti.h(75): warning: padding size of 'EXTI_InitTypeDef' with 1 byte to alignment boundary [-Wpadded]
+typedef struct
+        ^
+1 warning generated.
+compiling stm32f10x_exti.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_dac.c...
+compiling stm32f10x_fsmc.c...
+compiling stm32f10x_flash.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_iwdg.c...
+compiling stm32f10x_pwr.c...
+compiling stm32f10x_rtc.c...
+C:/Users/QUAN/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/src/stm32f10x_i2c.c(22): warning: In file included from...
+C:/Users/QUAN/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\stm32f10x_i2c.h(49): warning: padding size of 'I2C_InitTypeDef' with 2 bytes to alignment boundary [-Wpadded]
+typedef struct
+        ^
+1 warning generated.
+compiling stm32f10x_i2c.c...
+compiling stm32f10x_rcc.c...
+C:/Users/QUAN/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/src/stm32f10x_usart.c(22): warning: In file included from...
+C:/Users/QUAN/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\stm32f10x_usart.h(49): warning: padding size of 'USART_InitTypeDef' with 2 bytes to alignment boundary [-Wpadded]
+typedef struct
+        ^
+C:/Users/QUAN/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/src/stm32f10x_usart.c(1043): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  itmask = ((uint16_t)0x01 << (uint16_t)bitpos);
+         ~  ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+2 warnings generated.
+compiling stm32f10x_usart.c...
+assembling startup_stm32f10x_md.s...
+compiling stm32f10x_wwdg.c...
+C:/Users/QUAN/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/src/stm32f10x_tim.c(22): warning: In file included from...
+C:/Users/QUAN/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\stm32f10x_tim.h(50): warning: padding size of 'TIM_TimeBaseInitTypeDef' with 1 byte to alignment boundary [-Wpadded]
+typedef struct
+        ^
+C:/Users/QUAN/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/src/stm32f10x_tim.c(725): warning: implicit conversion loses integer precision: 'unsigned int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+             TIM_BDTRInitStruct->TIM_Break | TIM_BDTRInitStruct->TIM_BreakPolarity |
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:/Users/QUAN/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/src/stm32f10x_tim.c(1982): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  tmp = CCER_CCE_Set << TIM_Channel;
+      ~ ~~~~~~~~~~~~~^~~~~~~~~~~~~~
+C:/Users/QUAN/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/src/stm32f10x_tim.c(2012): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  tmp = CCER_CCNE_Set << TIM_Channel;
+      ~ ~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+C:/Users/QUAN/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/src/stm32f10x_tim.c(2057): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  tmp1 = CCER_CCE_Set << (uint16_t)TIM_Channel;
+       ~ ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+5 warnings generated.
+compiling stm32f10x_tim.c...
+C:/Users/QUAN/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/GPIO_STM32F10x.c(26): warning: In file included from...
+C:/Users/QUAN/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/GPIO_STM32F10x.h(246): warning: implicit conversion loses integer precision: 'volatile uint32_t' (aka 'volatile unsigned int') to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  return (GPIOx->IDR);
+  ~~~~~~  ~~~~~~~^~~
+C:/Users/QUAN/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/GPIO_STM32F10x.c(128): warning: integer constant not in range of enumerated type 'GPIO_CONF' [-Wassign-enum]
+      conf &= ~1;
+              ^
+C:/Users/QUAN/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/GPIO_STM32F10x.c(140): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  *reg &= ~(0xF << (num << 2));
+       ~~ ^~~~~~~~~~~~~~~~~~~~
+C:/Users/QUAN/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver/GPIO_STM32F10x.c(141): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  *reg |= ((conf << 2) | mode) << (num << 2);
+       ~~ ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+4 warnings generated.
+compiling GPIO_STM32F10x.c...
+RTE/Device/STM32F103CB/system_stm32f10x.c(166): warning: no previous extern declaration for non-static variable 'AHBPrescTable' [-Wmissing-variable-declarations]
+__I uint8_t AHBPrescTable[16] = {0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 4, 6, 7, 8, 9};
+            ^
+RTE/Device/STM32F103CB/system_stm32f10x.c(166): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+__I uint8_t AHBPrescTable[16] = {0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 4, 6, 7, 8, 9};
+    ^
+1 warning generated.
+compiling system_stm32f10x.c...
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/CMSIS/RTOS2/FreeRTOS/Source/freertos_evr.c(25): warning: In file included from...
+./RTE/RTOS\FreeRTOSConfig.h(352): warning: '__ARM_ARCH_7A__' is not defined, evaluates to 0 [-Wundef]
+#if (__ARM_ARCH_7A__ == 1U)
+     ^
+1 warning generated.
+compiling freertos_evr.c...
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/croutine.c(29): warning: In file included from...
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/include\FreeRTOS.h(64): warning: In file included from...
+./RTE/RTOS\FreeRTOSConfig.h(352): warning: '__ARM_ARCH_7A__' is not defined, evaluates to 0 [-Wundef]
+#if (__ARM_ARCH_7A__ == 1U)
+     ^
+1 warning generated.
+compiling croutine.c...
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/list.c(37): warning: In file included from...
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/include\FreeRTOS.h(64): warning: In file included from...
+./RTE/RTOS\FreeRTOSConfig.h(352): warning: '__ARM_ARCH_7A__' is not defined, evaluates to 0 [-Wundef]
+#if (__ARM_ARCH_7A__ == 1U)
+     ^
+1 warning generated.
+compiling list.c...
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/event_groups.c(38): warning: In file included from...
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/include\FreeRTOS.h(64): warning: In file included from...
+./RTE/RTOS\FreeRTOSConfig.h(352): warning: '__ARM_ARCH_7A__' is not defined, evaluates to 0 [-Wundef]
+#if (__ARM_ARCH_7A__ == 1U)
+     ^
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/event_groups.c(54): warning: padding size of 'struct EventGroupDef_t' with 3 bytes to alignment boundary [-Wpadded]
+    typedef struct EventGroupDef_t
+                   ^
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/event_groups.c(38): warning: In file included from...
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/include\FreeRTOS.h(3256): warning: padding size of 'struct xSTATIC_EVENT_GROUP' with 3 bytes to alignment boundary [-Wpadded]
+typedef struct xSTATIC_EVENT_GROUP
+               ^
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/event_groups.c(254): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                taskYIELD_WITHIN_API();
+                                      ^
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/event_groups.c(410): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                taskYIELD_WITHIN_API();
+                                      ^
+5 warnings generated.
+compiling event_groups.c...
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/portable/GCC/ARM_CM3/port.c(34): warning: In file included from...
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/include\FreeRTOS.h(64): warning: In file included from...
+./RTE/RTOS\FreeRTOSConfig.h(352): warning: '__ARM_ARCH_7A__' is not defined, evaluates to 0 [-Wundef]
+#if (__ARM_ARCH_7A__ == 1U)
+     ^
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/portable/GCC/ARM_CM3/port.c(285): warning: unused variable 'pxVectorTable' [-Wunused-variable]
+        const portISR_t * const pxVectorTable = portSCB_VTOR_REG;
+                                ^
+2 warnings generated.
+compiling port.c...
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/portable/MemMang/heap_4.c(45): warning: In file included from...
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/include\FreeRTOS.h(64): warning: In file included from...
+./RTE/RTOS\FreeRTOSConfig.h(352): warning: '__ARM_ARCH_7A__' is not defined, evaluates to 0 [-Wundef]
+#if (__ARM_ARCH_7A__ == 1U)
+     ^
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/portable/MemMang/heap_4.c(245): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                heapVALIDATE_BLOCK_POINTER( pxBlock );
+                                                     ^
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/portable/MemMang/heap_4.c(251): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                    heapVALIDATE_BLOCK_POINTER( pxBlock );
+                                                         ^
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/portable/MemMang/heap_4.c(261): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                    heapVALIDATE_BLOCK_POINTER( pvReturn );
+                                                          ^
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/portable/MemMang/heap_4.c(362): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        heapVALIDATE_BLOCK_POINTER( pxLink );
+                                            ^
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/portable/MemMang/heap_4.c(506): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        heapVALIDATE_BLOCK_POINTER( pxIterator );
+                                                ^
+6 warnings generated.
+compiling heap_4.c...
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/stream_buffer.c(38): warning: In file included from...
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/include\FreeRTOS.h(64): warning: In file included from...
+./RTE/RTOS\FreeRTOSConfig.h(352): warning: '__ARM_ARCH_7A__' is not defined, evaluates to 0 [-Wundef]
+#if (__ARM_ARCH_7A__ == 1U)
+     ^
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/stream_buffer.c(244): warning: padding struct 'struct StreamBufferDef_t' with 3 bytes to align 'uxStreamBufferNumber' [-Wpadded]
+        UBaseType_t uxStreamBufferNumber; /* Used for tracing purposes. */
+                    ^
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/stream_buffer.c(38): warning: In file included from...
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/include\FreeRTOS.h(3317): warning: padding struct 'struct xSTATIC_STREAM_BUFFER' with 3 bytes to align 'uxDummy4' [-Wpadded]
+        UBaseType_t uxDummy4;
+                    ^
+3 warnings generated.
+compiling stream_buffer.c...
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/queue.c(37): warning: In file included from...
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/include\FreeRTOS.h(64): warning: In file included from...
+./RTE/RTOS\FreeRTOSConfig.h(352): warning: '__ARM_ARCH_7A__' is not defined, evaluates to 0 [-Wundef]
+#if (__ARM_ARCH_7A__ == 1U)
+     ^
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/queue.c(338): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                        queueYIELD_IF_USING_PREEMPTION();
+                                                        ^
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/queue.c(133): warning: padding struct 'struct QueueDefinition' with 1 byte to align 'uxQueueNumber' [-Wpadded]
+        UBaseType_t uxQueueNumber;
+                    ^
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/queue.c(103): warning: padding size of 'struct QueueDefinition' with 3 bytes to alignment boundary [-Wpadded]
+typedef struct QueueDefinition /* The old naming convention is used to prevent breaking kernel aware debuggers. */
+               ^
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/queue.c(37): warning: In file included from...
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/include\FreeRTOS.h(3236): warning: padding struct 'struct xSTATIC_QUEUE' with 1 byte to align 'uxDummy8' [-Wpadded]
+        UBaseType_t uxDummy8;
+                    ^
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/include\FreeRTOS.h(3213): warning: padding size of 'struct xSTATIC_QUEUE' with 3 bytes to alignment boundary [-Wpadded]
+typedef struct xSTATIC_QUEUE
+               ^
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/queue.c(1045): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                            queueYIELD_IF_USING_PREEMPTION();
+                                                            ^
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/queue.c(1058): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                        queueYIELD_IF_USING_PREEMPTION();
+                                                        ^
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/queue.c(1132): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                    taskYIELD_WITHIN_API();
+                                          ^
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/queue.c(1548): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                        queueYIELD_IF_USING_PREEMPTION();
+                                                        ^
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/queue.c(1614): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                    taskYIELD_WITHIN_API();
+                                          ^
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/queue.c(1718): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                        queueYIELD_IF_USING_PREEMPTION();
+                                                        ^
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/queue.c(1804): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                    taskYIELD_WITHIN_API();
+                                          ^
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/queue.c(1930): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                        queueYIELD_IF_USING_PREEMPTION();
+                                                        ^
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/queue.c(1997): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                    taskYIELD_WITHIN_API();
+                                          ^
+15 warnings generated.
+compiling queue.c...
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/timers.c(37): warning: In file included from...
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/include\FreeRTOS.h(64): warning: In file included from...
+./RTE/RTOS\FreeRTOSConfig.h(352): warning: '__ARM_ARCH_7A__' is not defined, evaluates to 0 [-Wundef]
+#if (__ARM_ARCH_7A__ == 1U)
+     ^
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/timers.c(37): warning: In file included from...
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/include\FreeRTOS.h(3139): warning: padding size of 'struct xSTATIC_TCB' with 1 byte to alignment boundary [-Wpadded]
+typedef struct xSTATIC_TCB
+               ^
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/timers.c(83): warning: padding size of 'struct tmrTimerControl' with 3 bytes to alignment boundary [-Wpadded]
+    typedef struct tmrTimerControl                                               /* The old naming convention is used to prevent breaking kernel aware debuggers. */
+                   ^
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/timers.c(37): warning: In file included from...
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/include\FreeRTOS.h(3284): warning: padding size of 'struct xSTATIC_TIMER' with 3 bytes to alignment boundary [-Wpadded]
+typedef struct xSTATIC_TIMER
+               ^
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/timers.c(749): warning: function 'prvTimerTask' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+    {
+    ^
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/timers.c(828): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                        taskYIELD_WITHIN_API();
+                                              ^
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/timers.c(37): warning: In file included from...
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/include\FreeRTOS.h(3236): warning: padding struct 'struct xSTATIC_QUEUE' with 1 byte to align 'uxDummy8' [-Wpadded]
+        UBaseType_t uxDummy8;
+                    ^
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/include\FreeRTOS.h(3213): warning: padding size of 'struct xSTATIC_QUEUE' with 3 bytes to alignment boundary [-Wpadded]
+typedef struct xSTATIC_QUEUE
+               ^
+8 warnings generated.
+compiling timers.c...
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/tasks.c(39): warning: In file included from...
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/include\FreeRTOS.h(64): warning: In file included from...
+./RTE/RTOS\FreeRTOSConfig.h(352): warning: '__ARM_ARCH_7A__' is not defined, evaluates to 0 [-Wundef]
+#if (__ARM_ARCH_7A__ == 1U)
+     ^
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/tasks.c(446): warning: no previous extern declaration for non-static variable 'pxCurrentTCB' [-Wmissing-variable-declarations]
+    portDONT_DISCARD PRIVILEGED_DATA TCB_t * volatile pxCurrentTCB = NULL;
+                                                      ^
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/tasks.c(446): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+    portDONT_DISCARD PRIVILEGED_DATA TCB_t * volatile pxCurrentTCB = NULL;
+                                     ^
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/tasks.c(358): warning: padding size of 'struct tskTaskControlBlock' with 1 byte to alignment boundary [-Wpadded]
+typedef struct tskTaskControlBlock       /* The old naming convention is used to prevent breaking kernel aware debuggers. */
+               ^
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/tasks.c(39): warning: In file included from...
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/include\FreeRTOS.h(3139): warning: padding size of 'struct xSTATIC_TCB' with 1 byte to alignment boundary [-Wpadded]
+typedef struct xSTATIC_TCB
+               ^
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/tasks.c(2325): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                    taskYIELD_WITHIN_API();
+                                          ^
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/tasks.c(2418): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+            taskYIELD_WITHIN_API();
+                                  ^
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/tasks.c(2470): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+            taskYIELD_WITHIN_API();
+                                  ^
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/tasks.c(3241): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                    portYIELD_WITHIN_API();
+                                          ^
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/tasks.c(40): warning: In file included from...
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/include/task.h(166): warning: padding struct 'struct xTASK_STATUS' with 3 bytes to align 'uxCurrentPriority' [-Wpadded]
+    UBaseType_t uxCurrentPriority;                /* The priority at which the task was running (may be inherited) when the structure was populated. */
+                ^
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/tasks.c(5799): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                taskYIELD();
+                           ^
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/tasks.c(5749): warning: function 'prvIdleTask' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/tasks.c(7675): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+            taskYIELD_WITHIN_API();
+                                  ^
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/tasks.c(7783): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+            taskYIELD_WITHIN_API();
+                                  ^
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/tasks.c(7893): warning: default label in switch which covers all enumeration values [-Wcovered-switch-default]
+                default:
+                ^
+C:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/tasks.c(8036): warning: default label in switch which covers all enumeration values [-Wcovered-switch-default]
+                default:
+                ^
+15 warnings generated.
+compiling tasks.c...
+linking...
+Program Size: Code=5928 RO-data=268 RW-data=8 ZI-data=11480  
+".\Objects\spl_091125.axf" - 0 Error(s), 90 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.CMSIS.6.1.0.pack
+                ARM.CMSIS.6.1.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: OS Tick Version: 1.0.1
+   * Component: RTOS2 Version: 2.3.0
+   * Component: CORE Version: 6.1.0
+   * Component: SysTick Version: 1.0.5
+
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.CMSIS-FreeRTOS.11.1.0.pack
+                ARM.CMSIS-FreeRTOS.11.1.0
+                Bundle of FreeRTOS for Cortex-M and Cortex-A
+   * Component: Config Variant: CMSIS RTOS2 Version: 11.1.0
+   * Component: Core Variant: Cortex-M Version: 11.1.0
+   * Component: Coroutines Version: 11.1.0
+   * Component: Event Groups Version: 11.1.0
+   * Component: Heap Variant: Heap_4 Version: 11.1.0
+   * Component: Message Buffer Version: 11.1.0
+   * Component: Stream Buffer Version: 11.1.0
+   * Component: Timers Version: 11.1.0
+   * Component: FreeRTOS Variant: Cortex-M Version: 11.1.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F1xx_DFP.2.4.1.pack
+                Keil.STM32F1xx_DFP.2.4.1
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+   * Component: GPIO Version: 1.3
+   * Component: Startup Version: 1.0.0
+   * Component: ADC Version: 3.6.0
+   * Component: BKP Version: 3.6.0
+   * Component: DAC Version: 3.6.0
+   * Component: DMA Version: 3.6.0
+   * Component: EXTI Version: 3.6.0
+   * Component: FSMC Version: 3.6.0
+   * Component: Flash Version: 3.6.0
+   * Component: Framework Version: 3.6.0
+   * Component: GPIO Version: 3.6.0
+   * Component: I2C Version: 3.6.0
+   * Component: IWDG Version: 3.6.0
+   * Component: PWR Version: 3.6.0
+   * Component: RCC Version: 3.6.0
+   * Component: RTC Version: 3.6.0
+   * Component: TIM Version: 3.6.0
+   * Component: USART Version: 3.6.0
+   * Component: WWDG Version: 3.6.0
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\Device\STM32F103CB
+  .\RTE\RTOS
+  .\RTE\_Target_1
+  C:\Users\QUAN\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\11.1.0\CMSIS\RTOS2\FreeRTOS\Include
+  C:\Users\QUAN\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\11.1.0\Source\include
+  C:\Users\QUAN\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\11.1.0\Source\portable\GCC\ARM_CM3
+  C:\Users\QUAN\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include
+  C:\Users\QUAN\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\RTOS2\Include
+  C:\Users\QUAN\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include
+  C:\Users\QUAN\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\StdPeriph_Driver\inc
+  C:\Users\QUAN\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\RTE_Driver
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ::CMSIS:OS Tick:1.0.1 (API)
+      Include file:  CMSIS\RTOS2\Include\os_tick.h
+
+   * Component: ::CMSIS:RTOS2:2.3.0 (API)
+      Include file:  CMSIS\RTOS2\Include\cmsis_os2.h
+
+   * Component: ARM.FreeRTOS::RTOS:Config:CMSIS RTOS2:11.1.0
+      Include file:  CMSIS\RTOS2\FreeRTOS\Config\FreeRTOSConfig.h
+
+   * Component: ARM.FreeRTOS::RTOS:Core:Cortex-M:11.1.0
+      Include file:  Source\include\FreeRTOS.h
+      Include file:  Source\include\queue.h
+      Include file:  Source\include\task.h
+      Source file:   Source\tasks.c
+      Source file:   Source\queue.c
+      Source file:   Source\list.c
+      Include file:  Source\include\semphr.h
+      Source file:   Source\portable\GCC\ARM_CM3\port.c
+      Source file:   CMSIS\RTOS2\FreeRTOS\Source\freertos_evr.c
+
+   * Component: ARM.FreeRTOS::RTOS:Coroutines:11.1.0
+      Include file:  Source\include\croutine.h
+      Source file:   Source\croutine.c
+
+   * Component: ARM.FreeRTOS::RTOS:Event Groups:11.1.0
+      Include file:  Source\include\event_groups.h
+      Source file:   Source\event_groups.c
+
+   * Component: ARM.FreeRTOS::RTOS:Heap:Heap_4:11.1.0
+      Source file:   Source\portable\MemMang\heap_4.c
+
+   * Component: ARM.FreeRTOS::RTOS:Message Buffer:11.1.0
+      Include file:  Source\include\message_buffer.h
+      Source file:   Source\stream_buffer.c
+
+   * Component: ARM.FreeRTOS::RTOS:Stream Buffer:11.1.0
+      Include file:  Source\include\stream_buffer.h
+      Source file:   Source\stream_buffer.c
+
+   * Component: ARM.FreeRTOS::RTOS:Timers:11.1.0
+      Source file:   Source\timers.c
+      Include file:  Source\include\timers.h
+
+   * Component: ARM::CMSIS:CORE:6.1.0
+
+   * Component: ARM::CMSIS:OS Tick:SysTick:1.0.5
+      Source file:   CMSIS\RTOS2\Source\os_systick.c
+
+   * Component: ARM::CMSIS:RTOS2:FreeRTOS:Cortex-M:11.1.0
+      Source file:   CMSIS\RTOS2\FreeRTOS\Source\cmsis_os2.c
+      Include file:  CMSIS\RTOS2\FreeRTOS\Include\freertos_mpool.h
+      Source file:   CMSIS\RTOS2\FreeRTOS\Source\clib_os.c
+
+   * Component: Keil::Device:GPIO:1.3
+      Include file:  RTE_Driver\GPIO_STM32F10x.h
+      Source file:   RTE_Driver\GPIO_STM32F10x.c
+
+   * Component: Keil::Device:Startup:1.0.0
+      Source file:   Device\Source\ARM\startup_stm32f10x_md.s
+      Source file:   Device\Source\system_stm32f10x.c
+      Include file:  RTE_Driver\Config\RTE_Device.h
+      Source file:   Device\Source\ARM\STM32F1xx_OPT.s
+
+   * Component: Keil::Device:StdPeriph Drivers:ADC:3.6.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_adc.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_adc.c
+
+   * Component: Keil::Device:StdPeriph Drivers:BKP:3.6.0
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_bkp.c
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_bkp.h
+
+   * Component: Keil::Device:StdPeriph Drivers:DAC:3.6.0
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_dac.c
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_dac.h
+
+   * Component: Keil::Device:StdPeriph Drivers:DMA:3.6.0
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_dma.c
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_dma.h
+
+   * Component: Keil::Device:StdPeriph Drivers:EXTI:3.6.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_exti.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_exti.c
+
+   * Component: Keil::Device:StdPeriph Drivers:FSMC:3.6.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_fsmc.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_fsmc.c
+
+   * Component: Keil::Device:StdPeriph Drivers:Flash:3.6.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_flash.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_flash.c
+
+   * Component: Keil::Device:StdPeriph Drivers:Framework:3.6.0
+      Include file:  Device\StdPeriph_Driver\templates\stm32f10x_it.h
+      Include file:  Device\StdPeriph_Driver\inc\misc.h
+      Source file:   Device\StdPeriph_Driver\templates\stm32f10x_conf.h
+      Source file:   Device\StdPeriph_Driver\src\misc.c
+      Source file:   Device\StdPeriph_Driver\templates\stm32f10x_it.c
+
+   * Component: Keil::Device:StdPeriph Drivers:GPIO:3.6.0
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_gpio.c
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_gpio.h
+
+   * Component: Keil::Device:StdPeriph Drivers:I2C:3.6.0
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_i2c.c
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_i2c.h
+
+   * Component: Keil::Device:StdPeriph Drivers:IWDG:3.6.0
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_iwdg.c
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_iwdg.h
+
+   * Component: Keil::Device:StdPeriph Drivers:PWR:3.6.0
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_pwr.c
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_pwr.h
+
+   * Component: Keil::Device:StdPeriph Drivers:RCC:3.6.0
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_rcc.c
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_rcc.h
+
+   * Component: Keil::Device:StdPeriph Drivers:RTC:3.6.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_rtc.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_rtc.c
+
+   * Component: Keil::Device:StdPeriph Drivers:TIM:3.6.0
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_tim.c
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_tim.h
+
+   * Component: Keil::Device:StdPeriph Drivers:USART:3.6.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_usart.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_usart.c
+
+   * Component: Keil::Device:StdPeriph Drivers:WWDG:3.6.0
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_wwdg.c
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_wwdg.h
+Build Time Elapsed:  00:00:04
+</pre>
+</body>
+</html>
