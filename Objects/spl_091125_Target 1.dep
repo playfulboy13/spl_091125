@@ -1,7 +1,7 @@
 Dependencies for Project 'spl_091125', Target 'Target 1': (DO NOT MODIFY !)
 CompilerVersion: 6140000::V6.14::ARMCLANG
-F (.\main.c)(0x6911D4E2)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/Device/STM32F103CB-I./RTE/RTOS-I./RTE/_Target_1-IC:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/CMSIS/RTOS2/FreeRTOS/Include-IC:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/include-IC:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/portable/GCC/ARM_CM3-IC:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include-IC:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/RTOS2/Include-IC:/Users/QUAN/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-IC:/Users/QUAN/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc-IC:/Users/QUAN/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver-D__UVISION_VERSION="531" -D_RTE_ -DSTM32F10X_MD -D_RTE_-o ./objects/main.o -MD)
-I (main.h)(0x6911DED1)
+F (.\main.c)(0x6911E3C4)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/Device/STM32F103CB-I./RTE/RTOS-I./RTE/_Target_1-IC:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/CMSIS/RTOS2/FreeRTOS/Include-IC:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/include-IC:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/portable/GCC/ARM_CM3-IC:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include-IC:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/RTOS2/Include-IC:/Users/QUAN/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-IC:/Users/QUAN/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc-IC:/Users/QUAN/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver-D__UVISION_VERSION="531" -D_RTE_ -DSTM32F10X_MD -D_RTE_-o ./objects/main.o -MD)
+I (main.h)(0x6911DF38)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x5ED619F4)
 I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5ED619F4)
 I (C:\Users\QUAN\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x61AD876E)
@@ -48,13 +48,13 @@ I (C:\Users\QUAN\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\11.1.0\Source\includ
 I (C:\Users\QUAN\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\11.1.0\Source\include\queue.h)(0x66286F98)
 I (C:\Users\QUAN\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\11.1.0\Source\include\timers.h)(0x66286F98)
 I (C:\Users\QUAN\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\11.1.0\Source\include\event_groups.h)(0x66286F98)
-I (user_task.h)(0x6911C8A4)
-I (lcd.h)(0x6911D4C6)
-I (adc.h)(0x6911DED1)
-F (.\main.h)(0x6911DED1)()
-F (.\user_task.c)(0x6911C8F2)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/Device/STM32F103CB-I./RTE/RTOS-I./RTE/_Target_1-IC:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/CMSIS/RTOS2/FreeRTOS/Include-IC:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/include-IC:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/portable/GCC/ARM_CM3-IC:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include-IC:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/RTOS2/Include-IC:/Users/QUAN/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-IC:/Users/QUAN/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc-IC:/Users/QUAN/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver-D__UVISION_VERSION="531" -D_RTE_ -DSTM32F10X_MD -D_RTE_-o ./objects/user_task.o -MD)
-I (user_task.h)(0x6911C8A4)
-I (main.h)(0x6911DED1)
+I (user_task.h)(0x6911DF38)
+I (lcd.h)(0x6911E49E)
+I (adc.h)(0x6911E4EE)
+F (.\main.h)(0x6911DF38)()
+F (.\user_task.c)(0x6911DF38)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/Device/STM32F103CB-I./RTE/RTOS-I./RTE/_Target_1-IC:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/CMSIS/RTOS2/FreeRTOS/Include-IC:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/include-IC:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/portable/GCC/ARM_CM3-IC:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include-IC:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/RTOS2/Include-IC:/Users/QUAN/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-IC:/Users/QUAN/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc-IC:/Users/QUAN/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver-D__UVISION_VERSION="531" -D_RTE_ -DSTM32F10X_MD -D_RTE_-o ./objects/user_task.o -MD)
+I (user_task.h)(0x6911DF38)
+I (main.h)(0x6911DF38)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x5ED619F4)
 I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5ED619F4)
 I (C:\Users\QUAN\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x61AD876E)
@@ -101,12 +101,12 @@ I (C:\Users\QUAN\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\11.1.0\Source\includ
 I (C:\Users\QUAN\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\11.1.0\Source\include\queue.h)(0x66286F98)
 I (C:\Users\QUAN\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\11.1.0\Source\include\timers.h)(0x66286F98)
 I (C:\Users\QUAN\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\11.1.0\Source\include\event_groups.h)(0x66286F98)
-I (lcd.h)(0x6911D4C6)
-I (adc.h)(0x6911DED1)
-F (.\user_task.h)(0x6911C8A4)()
-F (.\lcd.c)(0x6911DDCB)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/Device/STM32F103CB-I./RTE/RTOS-I./RTE/_Target_1-IC:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/CMSIS/RTOS2/FreeRTOS/Include-IC:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/include-IC:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/portable/GCC/ARM_CM3-IC:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include-IC:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/RTOS2/Include-IC:/Users/QUAN/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-IC:/Users/QUAN/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc-IC:/Users/QUAN/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver-D__UVISION_VERSION="531" -D_RTE_ -DSTM32F10X_MD -D_RTE_-o ./objects/lcd.o -MD)
-I (lcd.h)(0x6911D4C6)
-I (main.h)(0x6911DED1)
+I (lcd.h)(0x6911E49E)
+I (adc.h)(0x6911E4EE)
+F (.\user_task.h)(0x6911DF38)()
+F (.\lcd.c)(0x6911E49E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/Device/STM32F103CB-I./RTE/RTOS-I./RTE/_Target_1-IC:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/CMSIS/RTOS2/FreeRTOS/Include-IC:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/include-IC:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/portable/GCC/ARM_CM3-IC:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include-IC:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/RTOS2/Include-IC:/Users/QUAN/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-IC:/Users/QUAN/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc-IC:/Users/QUAN/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver-D__UVISION_VERSION="531" -D_RTE_ -DSTM32F10X_MD -D_RTE_-o ./objects/lcd.o -MD)
+I (lcd.h)(0x6911E49E)
+I (main.h)(0x6911DF38)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x5ED619F4)
 I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5ED619F4)
 I (C:\Users\QUAN\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x61AD876E)
@@ -153,12 +153,12 @@ I (C:\Users\QUAN\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\11.1.0\Source\includ
 I (C:\Users\QUAN\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\11.1.0\Source\include\queue.h)(0x66286F98)
 I (C:\Users\QUAN\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\11.1.0\Source\include\timers.h)(0x66286F98)
 I (C:\Users\QUAN\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\11.1.0\Source\include\event_groups.h)(0x66286F98)
-I (user_task.h)(0x6911C8A4)
-I (adc.h)(0x6911DED1)
-F (.\lcd.h)(0x6911D4C6)()
-F (.\adc.c)(0x6911DED1)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/Device/STM32F103CB-I./RTE/RTOS-I./RTE/_Target_1-IC:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/CMSIS/RTOS2/FreeRTOS/Include-IC:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/include-IC:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/portable/GCC/ARM_CM3-IC:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include-IC:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/RTOS2/Include-IC:/Users/QUAN/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-IC:/Users/QUAN/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc-IC:/Users/QUAN/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver-D__UVISION_VERSION="531" -D_RTE_ -DSTM32F10X_MD -D_RTE_-o ./objects/adc.o -MD)
-I (adc.h)(0x6911DED1)
-I (main.h)(0x6911DED1)
+I (user_task.h)(0x6911DF38)
+I (adc.h)(0x6911E4EE)
+F (.\lcd.h)(0x6911E49E)()
+F (.\adc.c)(0x6911E4EE)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/Device/STM32F103CB-I./RTE/RTOS-I./RTE/_Target_1-IC:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/CMSIS/RTOS2/FreeRTOS/Include-IC:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/include-IC:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/portable/GCC/ARM_CM3-IC:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include-IC:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/RTOS2/Include-IC:/Users/QUAN/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-IC:/Users/QUAN/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc-IC:/Users/QUAN/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver-D__UVISION_VERSION="531" -D_RTE_ -DSTM32F10X_MD -D_RTE_-o ./objects/adc.o -MD)
+I (adc.h)(0x6911E4EE)
+I (main.h)(0x6911DF38)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x5ED619F4)
 I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5ED619F4)
 I (C:\Users\QUAN\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x61AD876E)
@@ -205,9 +205,9 @@ I (C:\Users\QUAN\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\11.1.0\Source\includ
 I (C:\Users\QUAN\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\11.1.0\Source\include\queue.h)(0x66286F98)
 I (C:\Users\QUAN\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\11.1.0\Source\include\timers.h)(0x66286F98)
 I (C:\Users\QUAN\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\11.1.0\Source\include\event_groups.h)(0x66286F98)
-I (user_task.h)(0x6911C8A4)
-I (lcd.h)(0x6911D4C6)
-F (.\adc.h)(0x6911DED1)()
+I (user_task.h)(0x6911DF38)
+I (lcd.h)(0x6911E49E)
+F (.\adc.h)(0x6911E4EE)()
 F (C:\Users\QUAN\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\11.1.0\CMSIS\RTOS2\FreeRTOS\Source\clib_os.c)(0x66286F98)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/Device/STM32F103CB-I./RTE/RTOS-I./RTE/_Target_1-IC:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/CMSIS/RTOS2/FreeRTOS/Include-IC:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/include-IC:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/11.1.0/Source/portable/GCC/ARM_CM3-IC:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include-IC:/Users/QUAN/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/RTOS2/Include-IC:/Users/QUAN/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-IC:/Users/QUAN/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc-IC:/Users/QUAN/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/RTE_Driver-D__UVISION_VERSION="531" -D_RTE_ -DSTM32F10X_MD -D_RTE_-o ./objects/clib_os.o -MD)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5ED619F4)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x5ED619F4)

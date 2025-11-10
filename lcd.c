@@ -145,7 +145,7 @@ void TaskLcd(void *pvParameters)
 	
 	while(1)
 	{
-		snprintf(line1Str,sizeof(line1Str),"HELLO STM32");
+		snprintf(line1Str,sizeof(line1Str),"%04d / %04d",adc_value.adcValues[0],adc_value.adcValues[1]);
 		snprintf(line2Str,sizeof(line2Str),"Count: %d%d  ",count/10,count%10);
 		LCD_SetCursor(&i2c_handle,0,0);
 		LCD_SendString(&i2c_handle,line1Str);

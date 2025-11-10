@@ -5,6 +5,8 @@
 
 #include "stm32f10x_i2c.h"
 
+#include "adc.h"
+
 #define LCD_ADDR 0X4E
 #define LCD_BACKLIGHT (1<<3)
 
