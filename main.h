@@ -13,6 +13,8 @@
 #include "queue.h"
 #include "event_groups.h"
 
+#include "user_task.h"
+
 typedef struct
 {
 	GPIO_TypeDef* GPIO_Port;

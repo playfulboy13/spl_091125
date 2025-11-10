@@ -5,6 +5,9 @@ int main(void)
 	SystemClock_Config();
 	GPIO_Config();
 	
+	xTaskCreate(Task1,"Task1",128,NULL,1,NULL);
+	vTaskStartScheduler();
+	
 	while(1);
 }
 
@@ -47,7 +50,7 @@ void GPIO_Init_Config(GPIO_Config_t* config)
 			volatile uint32_t *CR=(pinPos<8)?&(config->GPIO_Port->CRL):&(config->GPIO_Port->CRH);
 			uint8_t shift=(pinPos%8)*4;
 			uint32_t mode_bits=0;
-			*CR&=~(uint8_t)(0xF<<shift);
+			*CR&=~(uint32_t)(0xF<<shift);
 			if(config->GPIO_Mode==GPIO_Mode_Out_PP)
 			{
 				mode_bits=(uint32_t)(config->GPIO_Speed<<0)|(0X0<<2);
