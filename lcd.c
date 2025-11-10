@@ -36,7 +36,7 @@ void I2C_Config(void)
 
 void LCD_Write(I2C_Handle_t* i2c1_handle,uint8_t data)
 {
-	data|=LCD_BACKLIGHT;
+	data|=LCD_BackLightState;
 	if(xSemaphoreTake(i2c1_handle->i2c_mutex,portMAX_DELAY)==pdTRUE)
 	{
 		while(I2C_GetFlagStatus(i2c1_handle->i2c_port,I2C_FLAG_BUSY));
@@ -136,7 +136,7 @@ void TaskLcd(void *pvParameters)
 	(void)*pvParameters;
 	
 	LCD_Init();
-	//LCD_SetBackLight(1);
+	LCD_SetBackLight(1);
 	
 	char line1Str[17];
 	char line2Str[17];
@@ -153,14 +153,6 @@ void TaskLcd(void *pvParameters)
 		LCD_SendString(&i2c_handle,line2Str);
 		(count>99)?(count=0):(count++);
 		
-		if(count>25)
-		{
-			LCD_SetBackLight(1);
-		}
-		else
-		{
-			LCD_SetBackLight(0);
-		}
 		
 		vTaskDelay(pdMS_TO_TICKS(1000));
 	}

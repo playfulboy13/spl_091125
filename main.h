@@ -15,6 +15,7 @@
 
 #include "user_task.h"
 #include "lcd.h"
+#include "adc.h"
 
 typedef struct
 {
