@@ -4,8 +4,10 @@ int main(void)
 {
 	SystemClock_Config();
 	GPIO_Config();
+	I2C_Config();
 	
 	xTaskCreate(Task1,"Task1",128,NULL,1,NULL);
+	xTaskCreate(TaskLcd,"TaskLcd",128,NULL,1,NULL);
 	vTaskStartScheduler();
 	
 	while(1);

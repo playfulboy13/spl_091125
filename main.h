@@ -14,6 +14,7 @@
 #include "event_groups.h"
 
 #include "user_task.h"
+#include "lcd.h"
 
 typedef struct
 {
