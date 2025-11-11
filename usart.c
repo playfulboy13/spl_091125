@@ -32,3 +32,45 @@ void USART_Init_Config(USART_Handle_t* usart1_handle)
 	USART_Cmd(usart1_handle->usart_port,ENABLE);
 	
 }
+
+void USART1_Config(void)
+{
+	usart_handle.usart_port=USART1;
+	usart_handle.usart_mutex=xSemaphoreCreateMutex();
+	
+	USART_Init_Config(&usart_handle);
+	
+}
+
+void USART_SendChar(USART_Handle_t* usart1_handle,char str)
+{
+	if(xSemaphoreTake(usart1_handle->usart_mutex,portMAX_DELAY)==pdTRUE)
+	{
+		while(USART_GetFlagStatus(usart1_handle->usart_port,USART_FLAG_TXE)==RESET);
+		USART_SendData(usart1_handle->usart_port,str);
+		xSemaphoreGive(usart1_handle->usart_mutex);
+	}
+}
+
+void USART_Send(USART_Handle_t* usart1_handle,char *str)
+{
+	while(*str)
+	{
+		USART_SendChar(usart1_handle,*str++);
+	}
+}
+
+void TaskUsart1Send(void *pvParameters)
+{
+	(void)*pvParameters;
+	char buffer[64];
+	
+	while(1)
+	{
+		snprintf(buffer,sizeof(buffer),"ADC1: %04d \n ADC2: %04d \n ADC3: %04d\n",adc_value.adcValues[0],
+			adc_value.adcValues[1],adc_value.adcValues[2]);
+		USART_Send(&usart_handle,buffer);
+		
+		vTaskDelay(pdMS_TO_TICKS(1000));
+	}
+}

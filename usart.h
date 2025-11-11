@@ -5,6 +5,8 @@
 
 #include "stm32f10x_usart.h"
 
+#include "adc.h"
+
 typedef struct
 {
 	USART_TypeDef* usart_port;

@@ -48,4 +48,4 @@
   C:\Users\QUAN\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\11.1.0\Source\include\queue.h \
   C:\Users\QUAN\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\11.1.0\Source\include\event_groups.h \
   C:\Users\QUAN\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\11.1.0\Source\include\timers.h \
-  lcd.h adc.h
+  lcd.h adc.h usart.h
