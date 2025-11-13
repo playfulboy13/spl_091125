@@ -4,6 +4,8 @@ USART_Handle_t usart_handle;
 
 bool tx_done=false;
 
+USART_Data_t usart_data;
+
 void USART_Init_Config(USART_Handle_t* usart1_handle)
 {
 	GPIO_InitTypeDef GPIO_InitStructure;
@@ -57,6 +59,20 @@ void USART_Init_Config(USART_Handle_t* usart1_handle)
 	NVIC_SetPriority(DMA1_Channel4_IRQn,0);
 
 	tx_done = true; // ?
+	
+	
+	USART_ITConfig(usart1_handle->usart_port,USART_IT_RXNE,ENABLE);
+	
+	NVIC_InitTypeDef NVIC_InitStructure;
+	
+	NVIC_InitStructure.NVIC_IRQChannel=USART1_IRQn;
+	NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority=0;
+	NVIC_InitStructure.NVIC_IRQChannelSubPriority=0;
+	NVIC_InitStructure.NVIC_IRQChannelCmd=ENABLE;
+	NVIC_Init(&NVIC_InitStructure);
+	
+	
+	
 }
 
 
@@ -64,6 +80,7 @@ void USART1_Config(void)
 {
 	usart_handle.usart_port=USART1;
 	usart_handle.usart_mutex=xSemaphoreCreateMutex();
+	usart_handle.usart_queue=xQueueCreate(10,sizeof(uint8_t));
 	
 	USART_Init_Config(&usart_handle);
 	
@@ -124,6 +141,23 @@ void TaskUsart1Send(void *pvParameters)
 }
 
 
+void TaskUsart1Receive(void *pvParameters)
+{
+	(void)*pvParameters;
+	
+	char rx_buffer[RX_MAX_BUFFERSIZE];
+	
+	uint8_t rxData;
+	
+	while(1)
+	{
+		if(xQueueReceive(usart_handle.usart_queue,&rxData,portMAX_DELAY)==pdTRUE)
+		{
+			USART_Send(&usart_handle,"OK\r\n");
+		}
+	}
+}
+
 //IRQ
 
 void DMA1_Channel4_IRQHandler(void)
@@ -135,6 +169,19 @@ void DMA1_Channel4_IRQHandler(void)
         tx_done = true;
     }
 }
+
+void USART1_IRQHandler(void)
+{
+	BaseType_t xHigherPriorityTaskWoken = pdFALSE;
+
+	if (USART_GetITStatus(USART1, USART_IT_RXNE) != RESET)
+	{
+		uint8_t ch = (uint8_t)USART_ReceiveData(USART1)&0XFF;
+		xQueueSendFromISR(usart_handle.usart_queue, &ch, &xHigherPriorityTaskWoken);
+		portYIELD_FROM_ISR(xHigherPriorityTaskWoken);
+	}
+}
+
 
 
 

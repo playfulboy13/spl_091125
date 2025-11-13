@@ -18,6 +18,7 @@
 #include "lcd.h"
 #include "adc.h"
 #include "usart.h"
+#include "7seg.h"
 
 
 typedef struct

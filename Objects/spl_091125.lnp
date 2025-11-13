@@ -4,6 +4,7 @@
 ".\objects\lcd.o"
 ".\objects\adc.o"
 ".\objects\usart.o"
+".\objects\7seg.o"
 ".\objects\clib_os.o"
 ".\objects\cmsis_os2.o"
 ".\objects\os_systick.o"

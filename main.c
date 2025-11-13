@@ -11,6 +11,8 @@ int main(void)
 	xTaskCreate(TaskLcd,"TaskLcd",128,NULL,1,NULL);
 	xTaskCreate(TaskAdc,"TaskAdc",128,NULL,1,NULL);
 	xTaskCreate(TaskUsart1Send,"Usart1Send",256,NULL,1,NULL);
+	xTaskCreate(TaskUsart1Receive,"TaskUsart1Receive",256,NULL,1,NULL);
+	xTaskCreate(TaskHienThi,"TaskHienThi",128,NULL,1,NULL);
 	vTaskStartScheduler();
 	
 	while(1);
@@ -97,9 +99,11 @@ void GPIO_Init_Config(GPIO_Config_t* config)
 
 void GPIO_Config(void)
 {
-	GPIO_Config_t ledPin={GPIOB,GPIO_Pin_2,GPIO_Mode_Out_PP,GPIO_Speed_50MHz};
+	GPIO_Config_t ledPin={GPIOC,GPIO_Pin_13,GPIO_Mode_Out_PP,GPIO_Speed_50MHz};
 	GPIO_Init_Config(&ledPin);
 	
+	GPIO_Config_t hc595Pins={GPIOB,GPIO_Pin_12|GPIO_Pin_13|GPIO_Pin_14,GPIO_Mode_Out_PP,GPIO_Speed_50MHz};
+	GPIO_Init_Config(&hc595Pins);
 	
 }
 

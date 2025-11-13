@@ -433,6 +433,16 @@
               <FileType>5</FileType>
               <FilePath>.\usart.h</FilePath>
             </File>
+            <File>
+              <FileName>7seg.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\7seg.c</FilePath>
+            </File>
+            <File>
+              <FileName>7seg.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\7seg.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
